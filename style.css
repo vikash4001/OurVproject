@@ -1,0 +1,199 @@
+.service-img-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.service-img-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 192, 203, 0.9); /* Light pink background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.service-img-container:hover .service-img-hover {
+    opacity: 1;
+}
+
+.service-img-hover h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.service-img-hover p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.service-img-hover button {
+    background-color: #fff;
+    color: #e74c3c; /* Red color for button text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-img-hover button:hover {
+    background-color: #e74c3c; /* Red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.service-img-hover button span {
+    margin-right: 5px;
+}
+
+.contact-us-btn {
+    background-color: red;
+    color: white;
+}
+
+.contact-us-modal .modal-dialog {
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact-us-modal .modal-content {
+    background-color: #fff; /* White background */
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-us-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact-us-modal .modal-body {
+    padding: 30px;
+}
+
+.contact-us-modal .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-us-modal .form-control {
+    border: none; /* Remove border */
+    border-radius: 0; /* Ensure no border radius */
+    border-bottom: 1px solid #ccc; /* Bottom border for styling */
+    padding: 10px 15px;
+    box-shadow: none; /* Remove any box shadow */
+    background-color: transparent; /* Transparent background */
+    font-size: 16px; /* Font size */
+}
+
+.contact-us-modal .form-control:focus {
+    border-color: #e74c3c; /* Focus color */
+    box-shadow: none; /* Remove box shadow on focus */
+}
+
+.contact-us-modal .form-control-placeholder {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    font-size: 14px;
+    color: #aaa;
+    transition: all 0.2s;
+}
+
+.contact-us-modal .form-control:focus + .form-control-placeholder,
+.contact-us-modal .form-control:not(:placeholder-shown) + .form-control-placeholder {
+    top: -30px;
+    font-size: 12px;
+    color: #e74c3c;
+}
+
+.contact-us-modal .error-message {
+    color: #e74c3c; /* Red color for error message */
+    margin-top: 5px;
+    display: none; /* Initially hidden */
+}
+
+.contact-us-modal .form-check-label {
+    font-size: 14px;
+}
+
+.contact-us-modal .btn-contact-us {
+    background-color: #e74c3c; /* Red color */
+    color: #fff; /* White text */
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-modal .btn-contact-us:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.contact-us-modal .close {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.growth-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.growth-card img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.growth-card:hover {
+    background-color: #f8f9fa;
+}
+
+.text-Style {
+    font-weight: bold;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #f8f9fa;
+}
+
+.project-card h3 {
+    font-size: 18px;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.spaced-elements h1,
+.spaced-elements h2,
+.spaced-elements p,
+.spaced-elements button {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
